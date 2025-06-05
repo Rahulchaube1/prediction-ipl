@@ -1,0 +1,31 @@
+Python
+pycache/
+*.py[cod]
+*$py.class
+
+Virtual environment
+venv/
+*.venv/
+env/
+ENV/
+
+If you name your venv directory something else, add it here
+IDE / Editor specific files
+.vscode/
+.idea/
+*.suo
+.ntvs
+*.njsproj
+*.sln
+*.sublime-workspace
+
+OS specific files
+.DS_Store
+Thumbs.db
+
+Sensitive files (if any, though generally avoid committing them)
+.env
+secrets.json
+Kaggle (if you store kaggle.json locally in project, which is not recommended)
+.kaggle/
+kaggle.json

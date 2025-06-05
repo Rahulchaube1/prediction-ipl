@@ -1,0 +1,99 @@
+# IPL Match Winner Predictor & Analyzer 🏏
+
+This project is a Streamlit web application that predicts the winner of Indian Premier League (IPL) cricket matches using a Random Forest machine learning model. It also provides exploratory data analysis (EDA) insights from the historical IPL dataset.
+
+## Features
+
+* **Match Prediction:** Predicts the winner between two IPL teams based on historical data, considering factors like venue, city, and toss outcome.
+* **Exploratory Data Analysis (EDA):** Visualizes key insights from the IPL dataset, such as:
+    * Matches won by each team.
+    * Toss decision distributions.
+    * Matches played per season.
+    * Most frequent venues.
+* **Model Insights:** Displays the accuracy of the trained model and the importance of features used in the prediction.
+
+## Demo / Screenshots
+
+*(Consider adding a GIF or a few screenshots of your application in action here)*
+
+## Project Structure
+
+
+prediction/
+├── ipl_predictor.py       # Main Streamlit application script
+├── matches.csv            # IPL matches dataset (or instructions to get it)
+├── README.md              # This file
+├── requirements.txt       # Python dependencies
+├── .gitignore             # Files to be ignored by Git
+└── LICENSE                # Project license
+
+
+## Setup and Installation
+
+1.  **Clone the repository (or download the files):**
+    ```bash
+    git clone <your-repository-url>
+    cd <repository-name>/prediction
+    ```
+
+2.  **Create a Python Virtual Environment (Recommended):**
+    ```bash
+    python -m venv venv
+    # Activate the virtual environment
+    # On Windows:
+    venv\Scripts\activate
+    # On macOS/Linux:
+    source venv/bin/activate
+    ```
+
+3.  **Install Dependencies:**
+    Make sure you have the `requirements.txt` file in your `prediction` directory.
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+4.  **Prepare the Dataset:**
+    * The application attempts to load `matches.csv` from the same directory as `ipl_predictor.py`.
+    * Ensure `matches.csv` (containing IPL match data up to 2024, if possible) is present in the `prediction` folder.
+    * Alternatively, the script can be configured to download data from Kaggle Hub (requires Kaggle API setup and `kagglehub` library). See the `LOAD_FROM_KAGGLEHUB` variable in `ipl_predictor.py`.
+
+## How to Run
+
+1.  Ensure you are in the `prediction` directory in your terminal and your virtual environment (if used) is activated.
+2.  Run the Streamlit application:
+    ```bash
+    streamlit run ipl_predictor.py
+    ```
+3.  The application should automatically open in your default web browser.
+
+## Dependencies
+
+The main dependencies are listed in `requirements.txt` and include:
+* Streamlit
+* Pandas
+* Scikit-learn
+* NumPy
+* Matplotlib
+* Seaborn
+* KaggleHub (optional, if using Kaggle Hub to download data)
+
+Refer to `requirements.txt` for specific versions.
+
+## Contributing
+
+Contributions are welcome! If you have suggestions for improvements or find any issues, please feel free to:
+1.  Fork the repository.
+2.  Create a new branch (`git checkout -b feature/YourAmazingFeature`).
+3.  Make your changes.
+4.  Commit your changes (`git commit -m 'Add some YourAmazingFeature'`).
+5.  Push to the branch (`git push origin feature/YourAmazingFeature`).
+6.  Open a Pull Request.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgements
+
+* The IPL dataset used for training this model. (Specify source if applicable, e.g., Kaggle).
+* The Streamlit team for their excellent framework.
